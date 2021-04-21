@@ -15,7 +15,7 @@ PHP5 compatible. It uses some very advanced PHP functionality,
 to keep down the size of the code and at the same time still
 provide exceptional functionality.
 
-The total code is 13.5KB and is propperly indented, contains
+The total code is 13.5KB and is properly indented, contains
 minimal commenting and perfectly readable with all white space
 left in tact.
 
