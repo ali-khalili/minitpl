@@ -32,13 +32,17 @@ class Template
 		Hook::POSITION_POST => array()
 	);
 
-	/** Default constructor */
-	function __construct($paths=false)
+    /**
+     * Default constructor
+     * @param bool $paths
+     * @param bool $forceRecompile
+     */
+	function __construct($paths=false, $forceRecompile = false)
 	{
 		$this->set_compile_location("cache/", false);
 		$this->set_paths($paths);
 		$this->_defaults = array(array("ldelim","{"), array("rdelim","}"));
-		$this->_nocache = false;
+		$this->_nocache = !$forceRecompile;
 	}
 
 	function add_default($k,$v='')
